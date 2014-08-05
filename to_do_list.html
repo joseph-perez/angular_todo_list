@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="toDoList">
+	<head>
+		<title>Angular To Do List</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+		<script type="text/javascript" src="to_do_list.js"></script>
+		<link href="to_do_list.css" type="text/css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	</head>
+	<body ng-controller="toDoListController">
+		<div id="outer">
+			<div id="inner">
+				<h1>You have {{totalTasks()}} tasks.</h1>
+				<label for="addTask">Add</label>
+				<input type="text" name="addTask" id="addTask" ng-model="taskText" placeholder="Add your task right here!"><br>
+				<button ng-click="addTask()">Add Task</button>
+				<button ng-click="removeTask()">Remove Task</button>
+				<ul>
+					<li ng-repeat="task in tasks">
+						<input type="checkbox" ng-model="task.completed">
+						<span>{{task.task}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

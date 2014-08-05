@@ -1,0 +1,47 @@
+body {
+	background: rgba(252, 88, 76, 1);
+	color: white;
+	font-family: "Pacifico", "sans-serif";
+	font-size: 1.085em;
+}
+
+#outer {
+	width: 100%;
+	text-align: center;
+}
+
+#inner {
+	display: inline-block;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	font-family: "Pacifico", "sans-serif";
+	background: rgba(252, 88, 76, 1);
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	width: 50px;
+	height: 25px;
+	outline: none;
+	margin-top: 10px;
+}
+
+input {
+	width: 150px;
+	height: 25px;
+	outline: none;
+	border-radius: 5px;
+	border:1px solid white;
+}
+
+label {
+	margin-right: 10px;
+}
+
+span {
+	margin-left: -120px;
+}
